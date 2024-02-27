@@ -2221,11 +2221,15 @@ integrations:
     syncs:
       zendesk-tickets:
         runs: every 1 hour
+        description: |
+          List all tickets
         output: ZendeskTicket
         sync_type: full
         endpoint: /zendesk/tickets
       zendesk-articles:
         runs: every 6 hours
+        description: |
+          List all articles in Help center
         output: ZendeskArticle
         sync_type: full
         endpoint: /zendesk/articles
