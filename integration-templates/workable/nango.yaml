@@ -74,10 +74,18 @@ integrations:
         scopes:
           - r_jobs
     actions:
+      workable-create-candidate:
+        description: |
+          Action to create a candidate at the specified job.
+        scopes:
+          - w_candidates
+        output: WorkableCreateCandidateResponse
+        endpoint: /workable/create-comment
       workable-create-comment:
         description: |
           Action to create a comment on the applicant's timeline.
-          Scope(s): w_candidates or w_comments
+        scopes:
+          - w_candidates or w_comments
         output: WorkableCreateCommentResponse
         endpoint: /workable/create-comment
 models:

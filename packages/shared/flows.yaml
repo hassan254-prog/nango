@@ -2062,7 +2062,7 @@ integrations:
         description: |
           Fetches candidates for the specified job from workable.
           Details: full sync, doesn't track deletes, metadata is not required.
-        output: WorkableCandidate
+        output: WorkableJobsCandidate
         sync_type: full
         endpoint: /workable/jobs-candidates
         scopes:
@@ -2088,10 +2088,18 @@ integrations:
         scopes:
           - r_jobs
     actions:
+      workable-create-candidate:
+        description: |
+          Action to create a candidate at the specified job.
+        scopes:
+          - w_candidates
+        output: WorkableCreateCandidateResponse
+        endpoint: /workable/create-candidate
       workable-create-comment:
         description: |
           Action to create a comment on the applicant's timeline.
-          Scope(s): w_candidates or w_comments
+        scopes:
+          - w_candidates or w_comments
         output: WorkableCreateCommentResponse
         endpoint: /workable/create-comment
     models:
