@@ -3,6 +3,9 @@ integrations:
     syncs:
       wildix-pbx-colleagues:
         runs: every 1 hour
+        description: |
+          Fetches a list of users from PBX.
+          Details: Doesn't track deletes, metadata is not required.
         output: WildixPbxColleague
         sync_type: full
         endpoint: /wildix-pbx/colleagues
