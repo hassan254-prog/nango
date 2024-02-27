@@ -6,8 +6,7 @@ integrations:
         auto_start: false
         description: |
           Fetches accounts from zoho crm.
-          Details: full sync, doesn't track deletes, metadata is not required.
-          Scope(s): ZohoCRM.modules.accounts.READ or ZohoCRM.modules.ALL
+          Details: Doesn't track deletes, metadata is not required.
         output: ZohoCRMAccount
         sync_type: incremental
         endpoint: /zoho-crm/accounts
@@ -18,8 +17,7 @@ integrations:
         auto_start: false
         description: |
           Fetches contacts from zoho crm.
-          Details: full sync, doesn't track deletes, metadata is not required.
-          Scope(s): ZohoCRM.modules.contacts.READ or ZohoCRM.modules.ALL
+          Details: Doesn't track deletes, metadata is not required.
         output: ZohoCRMContact
         sync_type: incremental
         endpoint: /zoho-crm/contacts
@@ -30,8 +28,7 @@ integrations:
         auto_start: false
         description: |
           Fetches deals/opportunities from zoho crm.
-          Details: full sync, doesn't track deletes, metadata is not required.
-          Scope(s): ZohoCRM.modules.deals.READ or ZohoCRM.modules.ALL
+          Details: Doesn't track deletes, metadata is not required.
         output: ZohoCRMDeal
         sync_type: incremental
         endpoint: /zoho-crm/deals

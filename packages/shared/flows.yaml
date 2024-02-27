@@ -2019,8 +2019,7 @@ integrations:
         runs: every 6 hours
         description: |
           Fetches candidates from workable.
-          Details: incremental sync, doesn't track deletes, metadata is not
-          required.
+          Details: Doesn't track deletes, metadata is not required.
         output: WorkableCandidate
         sync_type: incremental
         endpoint: /workable/candidates
@@ -2030,7 +2029,7 @@ integrations:
         runs: every 6 hours
         description: |
           Fetches activity stream of the given candidate
-          Details: full sync, doesn't track deletes, metadata is not required.
+          Details: Doesn't track deletes, metadata is not required.
         output: WorkableCandidateActivity
         sync_type: full
         endpoint: /workable/candidates-activities
@@ -2040,7 +2039,7 @@ integrations:
         runs: every 6 hours
         description: |
           Fetches candidate's latest offer from workable.
-          Details: full sync, doesn't track deletes, metadata is not required.
+          Details: Doesn't track deletes, metadata is not required.
         output: WorkableCandidateOffer
         sync_type: full
         endpoint: /workable/candidates-offer
@@ -2050,8 +2049,7 @@ integrations:
         runs: every 6 hours
         description: |
           Fetches jobs from workable.
-          Details: incremental sync, doesn't track deletes, metadata is not
-          required.
+          Details: Doesn't track deletes, metadata is not required.
         output: WorkableJob
         sync_type: incremental
         endpoint: /workable/jobs
@@ -2061,7 +2059,7 @@ integrations:
         runs: every 6 hours
         description: |
           Fetches candidates for the specified job from workable.
-          Details: full sync, doesn't track deletes, metadata is not required.
+          Details: Doesn't track deletes, metadata is not required.
         output: WorkableJobsCandidate
         sync_type: full
         endpoint: /workable/jobs-candidates
@@ -2071,7 +2069,7 @@ integrations:
         runs: every 6 hours
         description: |
           Fetches questions for the specified job from workable.
-          Details: full sync, doesn't track deletes, metadata is not required.
+          Details: Doesn't track deletes, metadata is not required.
         output: WorkableJobQuestion
         sync_type: full
         endpoint: /workable/jobs-questions
@@ -2081,7 +2079,7 @@ integrations:
         runs: every 6 hours
         description: |
           Fetches account members from workable.
-          Details: full sync, doesn't track deletes, metadata is not required.
+          Details: Doesn't track deletes, metadata is not required.
         output: WorkableMember
         sync_type: full
         endpoint: /workable/members
@@ -2324,8 +2322,7 @@ integrations:
         auto_start: false
         description: |
           Fetches accounts from zoho crm.
-          Details: full sync, doesn't track deletes, metadata is not required.
-          Scope(s): ZohoCRM.modules.accounts.READ or ZohoCRM.modules.ALL
+          Details: Doesn't track deletes, metadata is not required.
         output: ZohoCRMAccount
         sync_type: incremental
         endpoint: /zoho-crm/accounts
@@ -2336,8 +2333,7 @@ integrations:
         auto_start: false
         description: |
           Fetches contacts from zoho crm.
-          Details: full sync, doesn't track deletes, metadata is not required.
-          Scope(s): ZohoCRM.modules.contacts.READ or ZohoCRM.modules.ALL
+          Details: Doesn't track deletes, metadata is not required.
         output: ZohoCRMContact
         sync_type: incremental
         endpoint: /zoho-crm/contacts
@@ -2348,8 +2344,7 @@ integrations:
         auto_start: false
         description: |
           Fetches deals/opportunities from zoho crm.
-          Details: full sync, doesn't track deletes, metadata is not required.
-          Scope(s): ZohoCRM.modules.deals.READ or ZohoCRM.modules.ALL
+          Details: Doesn't track deletes, metadata is not required.
         output: ZohoCRMDeal
         sync_type: incremental
         endpoint: /zoho-crm/deals
