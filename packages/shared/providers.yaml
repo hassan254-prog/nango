@@ -999,6 +999,19 @@ gumroad:
     proxy:
         base_url: https://api.gumroad.com
     docs: https://docs.nango.dev/integrations/all/gumroad
+guesty:
+    categories:
+        - other
+        - analytics
+    auth_mode: OAUTH2_CC
+    authorization_url: https://open-api.guesty.com/oauth2/token
+    authorization_params:
+        grant_type: client_credentials
+    default_scopes:
+        - open-api
+    proxy:
+        base_url: https://open-api.guesty.com/v1
+    docs: https://docs.nango.dev/integrations/all/guesty
 gusto:
     categories:
         - hr
