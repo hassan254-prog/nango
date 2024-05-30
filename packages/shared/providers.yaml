@@ -2470,6 +2470,28 @@ wakatime:
     proxy:
         base_url: https://wakatime.com
     docs: https://docs.nango.dev/integrations/all/wakatime
+#Untested configuration. Please reach out if you have a test account that we can use to test it.
+wallmart-seller:
+    categories:
+        - e-commerce
+    auth_mode: OAUTH2
+    authorization_url: https://login.account.wal-mart.com/authorize
+    token_url: https://marketplace.walmartapis.com/v3/token
+    token_request_auth_method: basic
+    authorization_params:
+        responseType: code
+        clientType: ${connectionConfig.clientType}
+        clientId: ${connectionConfig.clientId}
+        nonce: AnotherRandomStringWallmart
+    token_params:
+        grant_type: authorization_code
+    refresh_params:
+        grant_type: refresh_token
+    proxy:
+        base_url: https://marketplace.walmartapis.com
+        retry:
+            after: 'X-Next-Replenishment-Time'
+    docs: https://docs.nango.dev/integrations/all/wallmart
 wave-accounting:
     categories:
         - accounting
