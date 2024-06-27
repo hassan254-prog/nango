@@ -1530,6 +1530,17 @@ microsoft-tenant-specific:
     refresh_params:
         grant_type: refresh_token
     docs: https://docs.nango.dev/integrations/all/microsoft-tenant-specific
+garmin:
+    categories:
+        - sports
+    auth_mode: OAUTH1
+    request_url: https://connectapi.garmin.com/oauth-service/oauth/request_token
+    authorization_url: https://connect.garmin.com/oauthConfirm
+    token_url: https://connectapi.garmin.com/oauth-service/oauth/access_token
+    signature_method: 'HMAC-SHA1'
+    proxy:
+        base_url: https://apis.garmin.com
+    docs: https://docs.nango.dev/integrations/all/garmin
 microsoft-ads:
     alias: microsoft
     categories:
