@@ -130,6 +130,7 @@ publicAPI.route('/api-auth/api-key/:providerConfigKey').post(apiPublicAuth, apiA
 publicAPI.route('/api-auth/basic/:providerConfigKey').post(apiPublicAuth, apiAuthController.basic.bind(apiAuthController));
 publicAPI.route('/app-store-auth/:providerConfigKey').post(apiPublicAuth, appStoreAuthController.auth.bind(appStoreAuthController));
 publicAPI.route('/auth/tba/:providerConfigKey').post(apiPublicAuth, tbaAuthorization);
+publicAPI.route('/auth/tableau/:providerConfigKey').post(apiPublicAuth, tableauAuthorization);
 publicAPI.route('/unauth/:providerConfigKey').post(apiPublicAuth, unAuthController.create.bind(unAuthController));
 
 // API Admin routes
